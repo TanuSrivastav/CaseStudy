@@ -1,4 +1,4 @@
-using Ecommerce.Interfaces;
+using ECommerce.Interfaces;
 using ECommerce.Models;
 using ECommerce.ViewModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;

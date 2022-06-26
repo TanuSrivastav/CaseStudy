@@ -12,8 +12,10 @@
                 <h5 class="card-title">{{product.productName}}</h5>
                 <p class="card-text">{{product.productDescription}}</p>
                 <p class="card-text">₹ {{product.productMrp}}</p>
-                <a href="#" class="btn btn-primary">Buy</a>
+                <a routerLink="/cart" class="btn btn-primary" style="margin-right: 20px;" (click)="addtocart(product)" >Add to Cart</a>
             </div>
         </div>
     </div>
 </div>
+
+

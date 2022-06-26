@@ -1,5 +1,4 @@
-﻿
-using Ecommerce.Interfaces;
+﻿using ECommerce.Interfaces;
 using ECommerce.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -28,8 +27,14 @@ namespace ECommerce.ViewModels
         public Tokens Authenicate(LoginViewModel registerViewModel, bool IsRegister)
         {
             var _isAdmin = false;
+            var _isUserExists = false;
             if (IsRegister)
             {
+                if (db.TblLogins.Any(x => x.UserName == registerViewModel.UserName && x.Password == registerViewModel.Password))
+                {
+                    _isUserExists = true;
+                    return new Tokens { IsUserExits = _isUserExists };
+                }
                 TblLogin tblLogin = new TblLogin();
                 tblLogin.UserName = registerViewModel.UserName;
                 tblLogin.Password = registerViewModel.Password;
@@ -58,7 +63,7 @@ namespace ECommerce.ViewModels
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenkey), SecurityAlgorithms.HmacSha256Signature)
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return new Tokens { Token = tokenHandler.WriteToken(token), IsAdmin = _isAdmin };
+            return new Tokens { Token = tokenHandler.WriteToken(token), IsAdmin = _isAdmin, IsUserExits = _isUserExists };
         }
     }
 }

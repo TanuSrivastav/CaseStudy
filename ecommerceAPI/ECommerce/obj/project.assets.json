@@ -5971,11 +5971,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tanus\\source\\repos\\ECommerce\\ECommerce.csproj",
+      "projectUniqueName": "C:\\Users\\tanus\\OneDrive\\Desktop\\ECommerceSite\\ecommerceAPI\\ECommerce\\ECommerce.csproj",
       "projectName": "ECommerce",
-      "projectPath": "C:\\Users\\tanus\\source\\repos\\ECommerce\\ECommerce.csproj",
+      "projectPath": "C:\\Users\\tanus\\OneDrive\\Desktop\\ECommerceSite\\ecommerceAPI\\ECommerce\\ECommerce.csproj",
       "packagesPath": "C:\\Users\\tanus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tanus\\source\\repos\\ECommerce\\obj\\",
+      "outputPath": "C:\\Users\\tanus\\OneDrive\\Desktop\\ECommerceSite\\ecommerceAPI\\ECommerce\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tanus\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -12,5 +12,6 @@ namespace ECommerce.ViewModels
         public string RefreshToken { get; set; }
 
         public bool IsAdmin { get; set; }
+        public bool IsUserExits { get; internal set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using Ecommerce.Interfaces;
+﻿using ECommerce.Interfaces;
 using ECommerce.Models;
 using ECommerce.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -41,6 +41,10 @@ namespace ECommerce.Controllers
             login.UserName = registerViewModel.UserName;
             login.Password = registerViewModel.Password;
             var token = iJWTMangerRepository.Authenicate(login, true);
+            if (token.IsUserExits)
+            {
+                return Ok("User already exists");
+            }
             if (token == null)
             {
                 return Unauthorized();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EdSQaxP7uB49GxrWOsk20avC5ioGta82KXj+XAQ2Vbx4khtEJCD+DjZ9Ol4Qw6Wize49144mMkq05fUTP/OHrA==",
+  "dgSpecHash": "1cy8jqeh8VSAgwQM5+qBAJx5Q2JXca39sLq/v9WpQqX/M7hrWOX1d4fkfi5HtnOtP9bna6scHDtMwc2fNNk1MQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tanus\\source\\repos\\ECommerce\\ECommerce.csproj",
+  "projectFilePath": "C:\\Users\\tanus\\OneDrive\\Desktop\\ECommerceSite\\ecommerceAPI\\ECommerce\\ECommerce.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tanus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tanus\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.24\\microsoft.aspnetcore.authentication.jwtbearer.3.1.24.nupkg.sha512",
